@@ -1,0 +1,250 @@
+.main-boss {
+  padding-top: 48px;
+  padding-bottom: 45px;
+  background: #f2f2f2;
+}
+
+.main-boss-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-boss-li {
+  width: 100%;
+  padding-bottom: 14px;
+  background: #ffffff;
+  box-shadow: 0px 0px 7px 2px #00000007;
+  border-radius: 5px;
+}
+
+.option {
+  width: 100%;
+  padding-left: 21px;
+}
+.main-boss-big-text {
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 26px;
+  color: #111517;
+}
+.img-box {
+  max-width: 340px;
+}
+.main-boss-img {
+  width: 100%;
+  height: 100%;
+  min-height: 160px;
+  max-height: 170px;
+  margin-bottom: 24px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.main-boss-text {
+  margin: 0;
+  margin-bottom: 8px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #111517;
+}
+.main-boss-text-none {
+  margin: 0;
+}
+.strong {
+  font-weight: 600;
+  color: #111517;
+}
+.Countries-boxx {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .search-input {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .form-boss {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .search-input {
+    margin-bottom: 40px;
+  }
+  .herder__img {
+    width: 135px;
+  }
+
+  .Countries-boxx {
+    display: block;
+  }
+  .bos-big-text {
+    margin-top: 44px;
+  }
+}
+
+.body-night .main-boss {
+  background: #202c36;
+}
+
+.body-night .search-input {
+  background-color: #2b3844;
+  color: #ffffff;
+}
+.body-night .header {
+  background-color: #2b3844;
+}
+.body-night .header-boss {
+  background-color: #2b3844;
+}
+
+.body-night .search-input::placeholder {
+  color: #ffffff;
+}
+.body-night .main-boss-li {
+  background-color: #2b3844;
+}
+
+.body-night .main-boss-text {
+  color: #fff;
+}
+.body-night .main-boss-big-text {
+  color: #fff;
+}
+.body-night .countri {
+  color: #fff;
+}
+.body-night .strong {
+  color: #fff;
+}
+.body-night .button::before {
+  /* background-image: url("/img/oyqora.svg"); */
+}
+.body-night .herder__img {
+  display: none;
+}
+.body-night .none {
+  display: block;
+}
+.back-href {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-soon);
+}
+.back {
+  padding-left: 24px;
+  margin-bottom: 64px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-soon);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
+  border-radius: 2px;
+}
+.body-night .back {
+  color: #fff;
+}
+
+.back::before {
+  display: block;
+  margin-right: 8px;
+  content: "";
+  width: 12px;
+  height: 12px;
+
+  /* background-image: url("/img/strelka-chap.svg"); */
+  background-repeat: no-repeat;
+}
+/* .body-night .back::before {
+  background-image: url("/img/Path.svg");
+} */
+.body-night {
+  background-color: #2b3844;
+}
+
+.bos-big-text {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 30px;
+  color: #111517;
+}
+.body-night .bos-big-text {
+  color: #fff;
+}
+.bos-list {
+  list-style: none;
+  padding: 0;
+}
+.li-mini {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+
+  color: #111517;
+}
+
+.body-night .li-mini {
+  color: #fff;
+}
+.li-boya {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 32px;
+
+  color: #111517;
+}
+
+.body-night .li-boya {
+  color: #fff;
+}
+
+.body-night .Countries {
+  color: #fff;
+}
+.Countries {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #111517;
+}
+.twoo-box {
+  margin-left: auto;
+}
+.body-night .qoshni {
+  background: #2b3844;
+}
+.qoshni {
+  margin-right: 10px;
+  padding: 4px 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.104931);
+  border-radius: 2px;
+}
+.body-night .qoshni-hreft {
+  color: #fff;
+}
+.qoshni-hreft {
+  text-decoration: none;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #111517;
+}

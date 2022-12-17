@@ -1,0 +1,60 @@
+:root {
+  --text-nigth: var(#111517);
+  --text-soon: var(#fff);
+}
+
+.header-boss {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 23px;
+  padding-bottom: 24px;
+
+  background: var(--text-soon);
+  color: var(--text-nigth);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+}
+.Where {
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  margin-left: 81px;
+
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  /* color: var(--text-nigth); */
+}
+.none {
+  display: none;
+}
+.butoon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  background: none;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  /* color: var(--text-nigth); */
+}
+
+.butoon::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 14px;
+  margin-right: 10px;
+  background-image: url("../../assets/imgs/Path.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.logo {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--text-nigth);
+}
