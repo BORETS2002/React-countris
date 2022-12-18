@@ -1,0 +1,23 @@
+.boss {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.list-img {
+  display: inline-block;
+  width: 380px;
+  height: 280px;
+}
+
+.box__lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.list__one {
+  margin-right: 40px;
+}
+.Lists__twoo {
+  margin-top: 40px;
+}

@@ -1,5 +1,6 @@
 import "./basic.css";
 // import FlagGermany from "../../assets/imgs/german-flag.svg";
+import { Link } from "react-router-dom";
 
 function Main({ data }) {
   return data.map((item) => {
@@ -11,7 +12,7 @@ function Main({ data }) {
               <img
                 class='main-boss-img'
                 src={item.flags.svg}
-                alt='german flag'
+                alt={item.name.common}
               />
             </div>
 
@@ -31,9 +32,14 @@ function Main({ data }) {
                 {item.capital?.[0]}
                 <span class='countryCapital'></span>
               </p>
-              <button class='btn modalJS mt-2 bg-info  ' type='submit'>
+
+              <Link
+                to={`/list/${item.name.common}`}
+                class='btn modalJS mt-2 bg-info  '
+                type='submit'
+              >
                 more info
-              </button>
+              </Link>
             </div>
           </div>
         </li>

@@ -58,3 +58,11 @@
   line-height: 33px;
   color: var(--text-nigth);
 }
+.header_twoo {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  background: #ffffff;
+  border: none;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
+  border-radius: 6px;
+}

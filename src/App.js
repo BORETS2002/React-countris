@@ -1,46 +1,56 @@
 import Headerjs from "./components/header/header";
-import Formjs from "./components/formcontrol/form";
-import Mainjs from "./components/main/main";
-import "./App.css";
-import "./components/formcontrol/form.css";
-
-import "./components/main.css";
+// import Formjs from "./components/formcontrol/form";
 import { useState, useEffect } from "react";
 
+// import Mainjs from "./components/main/main";
+import "./App.css";
+// import "./components/formcontrol/form.css";
+import Mainjs from "./components/main/main";
+
+import "./components/main.css";
+// import { useState, useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
+import { List } from "./components/list/list";
+
 function App() {
-  const [data, usFunk] = useState([]);
+  // const [data, usFunk] = useState([]);
 
-  useEffect(() => {
-    fetch("https://restcountries.com/v3.1/all")
-      .then((res) => res.json())
-      .then((data) => usFunk([data]));
-  }, []);
+  // useEffect(() => {
+  //   fetch("https://restcountries.com/v3.1/all")
+  //     .then((res) => res.json())
+  //     .then((data) => usFunk([data]));
+  // }, []);
   //
   //
   //
 
-  function handelInput(evt) {
-    if (evt.key === "Enter") {
-      fetch(`https://restcountries.com/v3.1/name/${evt.target.value}`)
-        .then((res) => res.json())
-        .then((data) => {
-          usFunk([data]);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    }
-  }
+  // function handelInput(evt) {
+  //   if (evt.key === "Enter") {
+  //     fetch(`https://restcountries.com/v3.1/name/${evt.target.value}`)
+  //       .then((res) => res.json())
+  //       .then((data) => {
+  //         usFunk([data]);
+  //       })
+  //       .catch((error) => {
+  //         console.log(error);
+  //       });
+  //   }
+  // }
 
   //
   //
   //
   return (
     <>
-      <Headerjs />
+      <Routes>
+        <Route path='/' element={<Headerjs />} />
+      </Routes>
+      <Routes>
+        <Route path='/list/:names' element={<List />} />
+      </Routes>
       {/* <Formjs /> */}
 
-      <div className='intro'>
+      {/* <div className='intro'>
         <div className='container'>
           <h1 className='visually-hidden'>Where in the world?</h1>
           <form
@@ -60,7 +70,7 @@ function App() {
                 placeholder='Search for a country…'
               />
             </label>
-            {/* <h1> {value} </h1> */}
+        
 
             <select
               onChange={(evt) => {
@@ -104,12 +114,12 @@ function App() {
             </button>
           </form>
         </div>
-      </div>
+      </div> */}
 
       {/*  */}
       {/*  */}
       {/*  */}
-      <section className='main-boss-section'>
+      {/* <section className='main-boss-section'>
         <div className='container'>
           <ul className='main-boss-ul row'>
             {data.map((item) => (
@@ -117,7 +127,7 @@ function App() {
             ))}
           </ul>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
