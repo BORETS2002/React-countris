@@ -93,7 +93,6 @@ export function List() {
           })}
         </div>
       </section>
-      ;
     </>
   );
 }
