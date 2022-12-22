@@ -1,8 +1,16 @@
 :root {
-  --text-nigth: var(#111517);
+  --text-nigth: var(#2b3844);
   --text-soon: var(#fff);
 }
 
+.light {
+  background: var(--text-soon);
+  color: var(--text-nigth);
+}
+.dark {
+  background: #2b3844;
+  color: #fff;
+}
 .header-boss {
   display: flex;
   align-items: center;
@@ -10,8 +18,8 @@
   padding-top: 23px;
   padding-bottom: 24px;
 
-  background: var(--text-soon);
-  color: var(--text-nigth);
+  /* background: var(--text-soon);
+  color: var(--text-nigth); */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
 }
 .Where {
@@ -65,4 +73,10 @@
   border: none;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
   border-radius: 6px;
+}
+.dark .butoon {
+  color: #fff;
+}
+.dark .header-boss {
+  background-color: #2b3844;
 }

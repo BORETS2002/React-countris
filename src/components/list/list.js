@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./list.css";
 import "../header/header.css";
 import { useParams, useNavigate } from "react-router-dom";
-export function List() {
+export function List({ theme }) {
   const [data, setList] = useState([]);
   const { names } = useParams();
   console.log(names);

@@ -35,7 +35,7 @@
 .countri-boss {
   max-width: 200px;
   margin-left: auto;
-  background: #ffffff;
+  background-color: #ffffff;
   padding: 18px 15px 18px 24px;
   box-shadow: 0px 2px 9px #0000000e;
   border: 0;
@@ -52,6 +52,34 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 48px;
-  margin-top: 48px;
+}
+.light {
+  background: var(--text-soon);
+  color: var(--text-nigth);
+}
+.dark {
+  background: #202c36;
+  color: #fff;
+}
+.intro {
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+.dark .search-input {
+  background-color: #2b3844;
+  color: #fff;
+}
+.dark .search-input::placeholder {
+  color: #fff;
+}
+.dark .countri-boss {
+  background-color: #2b3844;
+  color: #fff;
+}
+.dark .form-boss {
+  background-color: #202c36;
+}
+.dark .countri {
+  color: #fff;
+  background-color: #202c36;
 }

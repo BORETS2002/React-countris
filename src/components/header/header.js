@@ -2,19 +2,22 @@ import "./header.css";
 import React from "react";
 // import Headerjs from "./components/header/header";
 // import Formjs from "./components/formcontrol/form";
-
+import { Link } from "react-router-dom";
 import Mainjs from "../main/main";
-
+import { useTranslation } from "react-i18next";
 // import "../formcontrol/form";
 
 import "../formcontrol/form.css";
 import { useState, useEffect } from "react";
 // import { Route, Routes } from "react-router-dom";
 // import { List } from "./components/list/list";
+import { Lang } from "../lang/lang";
 
-function Headerjs() {
+function Headerjs({ theme, setTheme }) {
+  const { t, i18n } = useTranslation();
+
   const [data, usFunk] = useState([]);
-
+  const [Til, setTil] = useState("uz");
   useEffect(() => {
     fetch("https://restcountries.com/v3.1/all")
       .then((res) => res.json())
@@ -39,20 +42,43 @@ function Headerjs() {
 
   return (
     <>
-      <div className='header'>
-        <div className='container'>
-          <div className='header-boss'>
-            <a className='logo' href='#'>
-              Where in the world?
-            </a>
-            <button className='butoon' type='button'>
-              Dark Mode
-            </button>
+      <div className={theme}>
+        <div className='header-boss'>
+          <div className='container'>
+            <div className=' d-flex justify-content-between '>
+              <Link className='logo' to='/'>
+                {Lang[Til].header.logo}
+                {/* {t("header.logo")} */}
+              </Link>
+              <div className='d-flex'>
+                <button
+                  // onClick={() => {
+                  //   setTheme(theme === "light" ? "dark" : "light");
+                  // }}
+
+                  onClick={() => {
+                    setTheme(theme === "light" ? "dark" : "light");
+                  }}
+                  className='butoon'
+                  type='button'
+                >
+                  {theme} Mode
+                </button>
+
+                <select
+                  onChange={(evt) => setTil(evt.target.value)}
+                  className='bos-Select'
+                >
+                  <option value='uz'>uz</option>
+                  <option value='en'>eng</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className='intro'>
+      <div className={`intro ${theme} `}>
         <div className='container'>
           <h1 className='visually-hidden'>Where in the world?</h1>
           <form
@@ -110,9 +136,6 @@ function Headerjs() {
                 Oceania
               </option>
             </select>
-            <button className='btn ms-3 btn-info' type='submit'>
-              search
-            </button>
           </form>
         </div>
       </div>
@@ -120,7 +143,7 @@ function Headerjs() {
       {/*  */}
       {/*  */}
       {/*  */}
-      <section className='main-boss-section'>
+      <section className={`main-boss-section ${theme}`}>
         <div className='container'>
           <ul className='main-boss-ul row'>
             {data.map((item) => (

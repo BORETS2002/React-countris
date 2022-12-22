@@ -21,7 +21,10 @@
   box-shadow: 0px 0px 7px 2px #00000007;
   border-radius: 5px;
 }
-
+.dark .main-boss-li {
+  background: #2b3844;
+  color: #fff;
+}
 .option {
   width: 100%;
   padding-left: 21px;
@@ -29,12 +32,14 @@
 .main-boss-big-text {
   margin: 0;
   margin-bottom: 16px;
-
   font-style: normal;
   font-weight: 800;
   font-size: 15px;
   line-height: 26px;
   color: #111517;
+}
+.dark .main-boss-big-text {
+  color: #fff;
 }
 .img-box {
   max-width: 340px;
@@ -58,12 +63,18 @@
   line-height: 16px;
   color: #111517;
 }
+.dark .main-boss-text {
+  color: #fff;
+}
 .main-boss-text-none {
   margin: 0;
 }
 .strong {
   font-weight: 600;
   color: #111517;
+}
+.dark .strong {
+  color: #fff;
 }
 .Countries-boxx {
   display: flex;

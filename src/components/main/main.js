@@ -1,3 +1,4 @@
+import "../header/header.css";
 import "./basic.css";
 // import FlagGermany from "../../assets/imgs/german-flag.svg";
 import { Link } from "react-router-dom";
